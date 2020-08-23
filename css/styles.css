@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+button,
+input{
+    border: 0;
+    outline: 0;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(110,69,148,1) 0%, rgba(10,33,103,1) 100%); 
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.container .card{
+    width: 400px;
+    height: 500px;
+    background: #cdcccd;
+    border-radius: 15px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .card .information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.container .card .information input{
+    padding: 10px 15px;
+    font-size: 17px;
+    width: 80%;
+    margin: 7px 0;
+    border-radius: 50px;
+
+    transition: width .6s;
+}
+
+.container .card .information h1{
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: #4e4e4e;
+}
+
+.container .card .information input[type=text]:focus{
+    width: 90%;
+}
+.container .card .information input[type=password]:focus{
+    width: 90%;
+}
+
+.container .card .information button{
+    background: linear-gradient(90deg, rgba(249,55,81,1) 0%, rgba(255,129,38,1) 100%);
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 17px;
+    width: 80%;
+    margin: 7px 0;
+    border-radius: 50px;
+    position: relative;
+}
+.container .card .information button:active{
+    top: 2px;
+    left: 2px;
+}
+
+.container .card a{
+    color: #000;
+}
+
+@media screen and (max-width: 430px){
+    .container .card{
+        background: none;
+        color: #fff;
+    }
+    .container .card .information input{
+        width: 100%;
+    }
+    .container .card .information h1{
+        color: #fff;
+    }
+    .container .card a{
+        color: #fff;
+    }
+    
+}
